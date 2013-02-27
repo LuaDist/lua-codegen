@@ -1,0 +1,42 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Francois Perrad"
+depends = {
+[[lua ~> 5.1]],
+}
+
+desc = "a template engine"
+version = "0.3.0"
+maintainer = "Francois Perrad"
+files = {
+Runtime = {
+[[lib/lua/CodeGen.lua]],
+[[lib/lua/CodeGen/Graph.lua]],
+[[lib/lua/CodeGen/lpeg.lua]],
+}
+,
+Data = {
+[[share/lua-codegen/CHANGES]],
+[[share/lua-codegen/COPYRIGHT]],
+[[share/lua-codegen/README.md]],
+}
+,
+Test = {
+[[share/lua-codegen/test//00-require.t]],
+[[share/lua-codegen/test//05-cond.t]],
+[[share/lua-codegen/test//tmpl.lua]],
+[[share/lua-codegen/test//09-examples.t]],
+[[share/lua-codegen/test//03-include.t]],
+[[share/lua-codegen/test//02-attr.t]],
+[[share/lua-codegen/test//04-apply.t]],
+[[share/lua-codegen/test//07-inheritance.t]],
+[[share/lua-codegen/test//09-graph.t]],
+[[share/lua-codegen/test//01-basic.t]],
+[[share/lua-codegen/test//06-external.t]],
+}
+,
+}
+
+license = "MIT/X11"
+name = "lua-codegen"
+url = "http://fperrad.github.com/lua-CodeGen/"
